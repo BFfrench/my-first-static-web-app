@@ -14,7 +14,7 @@ html, body {
   /* px means "pixels". The base font size is now 10 pixels high */
   font-size: 10px;
   /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
-  font-family: 'Share Tech Mono';
+  font-family: 'Share Tech Mono', monospace;
 }
 
 main {
