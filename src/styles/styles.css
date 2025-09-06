@@ -1,7 +1,8 @@
-
-
-p{
-  color: red
+p, li{
+  color: red;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 html, body {
@@ -9,19 +10,12 @@ html, body {
   border: 0;
   padding: 0;
   background-color: #fff;
-  /* px means "pixels". The base font size is now 10 pixels high */
-  font-size: 10px;
   /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
   font-family: 'Share Tech Mono', monospace;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+h1 {
+  font-size: 60px;
+  text-align: center;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
-}
