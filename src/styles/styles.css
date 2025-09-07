@@ -1,7 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Share+tech+mono);
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
 p, li{
-  color: red;
+  color: blue;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
@@ -13,7 +18,7 @@ html, body {
   padding: 0;
   background-color: #fff;
   /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
-  font-family: 'Share tech mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 h1 {
