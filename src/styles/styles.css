@@ -10,6 +10,7 @@ p, li{
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 html, body {
@@ -24,5 +25,6 @@ html, body {
 h1 {
   font-size: 60px;
   text-align: center;
+  font-family: 'Share Tech Mono', monospace;
 }
 
