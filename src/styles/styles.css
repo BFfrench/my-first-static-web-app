@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Share+tech+mono);
 
 p, li{
   color: red;
@@ -13,7 +13,7 @@ html, body {
   padding: 0;
   background-color: #fff;
   /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
-  font-family: 'Raleway', monospace;
+  font-family: 'Share tech mono', monospace;
 }
 
 h1 {
