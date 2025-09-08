@@ -10,14 +10,14 @@ TODO: play with weight and style params */
 html {
   font-size: 10px;
   font-family: 'Share Tech Mono', monospace;
-  background-color: rgb(41, 41, 41);;
+  background-color: rgb(235, 235, 235);
 }
 
 .logo-header img {
   float: left;
   width: 100px;
   height: 100px;
-  background: #555;
+  background: rgb(235, 235, 235);
 }
 
 .logo-header h1 {
@@ -34,46 +34,62 @@ html {
   text-shadow: 3px 3px 1px black;
 }
 
-
-
 .logo-header h2 {
   font-size: 32px;
   text-align: center;
 }
 
 p, li {
-  color: rgb(255, 0, 217);
+  color: rgb(32, 32, 32);
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
 }
 
-.wrapper { 
-        background:#EFEFEF; 
-        box-shadow: 1px 1px 10px #999; 
-        margin: auto; 
-        text-align: center; 
-        position: relative;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        margin-bottom: 20px !important;
-        width: 800px;
-        padding-top: 5px;
-    }
-    .scrolls { 
-        overflow-x: scroll;
-        overflow-y: hidden;
-        height: 400px;
-    white-space:nowrap
-    } 
-    .imageDiv img { 
-        box-shadow: 1px 1px 10px #999; 
-        margin: 2px;
-        max-height: 50px;
-        cursor: pointer;
-    display:inline-block;
-    *display:inline;
-    *zoom:1;
-    vertical-align:top;
-    }
+/* css animation adapted from tutorial at:
+https://web-eau.net/en/blog/horizontal-scrolling-images-css */
+
+.horizontal-scrolling-items {
+  display: flex;
+  height: 400px; 
+  gap: 100px;
+}
+
+.horizontal-scroll-item {
+	height: 100%;
+	width: 464px;
+	background-size: cover;
+	animation-duration: 30s;	
+	animation-name: HorizontalScroll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes infiniteScroll {
+	from {transform: translateX(0) }
+	to {transform: translateX(calc(0px - 50% - 50px));}
+}
+
+.item-1 {
+  background-image: url("images/bench science to analysis.png");
+}
+
+.item-2 {
+  background-image: url("images/Cross platform harmonisation.png");
+}
+
+.item-3 {
+  background-image: url("images/Designed for thinkers bult for doers.png");
+}
+
+.item-4 {
+  background-image: url("images/desktop science and productivity apps.png");
+}
+
+.item-5 {
+  background-image: url("images/minimalist productivity tools.png");
+}
+
+.item-6 {
+  background-image: url("images/mobile science and productivity apps.png");
+}
