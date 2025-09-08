@@ -16,7 +16,7 @@ html {
 body{
   margin: 100px 0 0 0;
   padding: 0 10px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(0, 235, 0);
   box-sizing: border-box;
   margin-left: 400;
   margin-right: 400;
@@ -56,12 +56,12 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 .horizontal-scrolling-items {
   display: flex;
   height: 400px; 
-  gap: 50 px;
+  gap: 50px;
 }
 
 .horizontal-scroll-item {
 	height: 100%;
-	/*width: 464px;*/
+	width: 400px;
 	background-size: cover;
 	animation-duration: 30s;	
 	animation-name: HorizontalScroll;
