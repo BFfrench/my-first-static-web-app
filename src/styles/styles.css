@@ -8,15 +8,25 @@ TODO: play with weight and style params */
 
 /* set the bgcolor of the main pain - want light grey*/
 html {
-  font-size: 10px;
+  font-size: 25px;
   font-family: 'Share Tech Mono', monospace;
   background-color: rgb(235, 235, 235);
 }
 
+body{
+  margin: 100px 0 0 0;
+  padding: 0 10px;
+  background-color: rgb(235, 235, 235);
+  box-sizing: border-box;
+  margin-left: 400;
+  margin-right: 400;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+
 .logo-header img {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  /*height: 100px;*/
   background: rgb(235, 235, 235);
 }
 
@@ -30,7 +40,7 @@ html {
 
   margin: 0;
   padding: 20px 0;
-  color: #00539F;
+  color: #156082;
   text-shadow: 3px 3px 1px black;
 }
 
@@ -39,14 +49,8 @@ html {
   text-align: center;
 }
 
-p, li {
-  color: rgb(32, 32, 32);
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-/* css animation adapted from tutorial at:
+/* -- ANIMATION START --
+ css animation adapted from tutorial at:
 https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 .horizontal-scrolling-items {
@@ -92,4 +96,14 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 .item-6 {
   background-image: url("../images/mobile science and productivity apps.png");
+}
+
+/* ANTIMATION END */
+
+
+p, li {
+  color: rgb(32, 32, 32);
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
 }
