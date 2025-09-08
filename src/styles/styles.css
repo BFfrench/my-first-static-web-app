@@ -1,7 +1,16 @@
+/* Setting the details for the font
+TODO: play with weight and style params */
 .share-tech-mono-regular {
   font-family: "Share Tech Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+/* set the bgcolor of the main pain - want light grey*/
+html {
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: rgb(41, 41, 41);;
 }
 
 .logo-header img {
@@ -25,11 +34,7 @@
   text-shadow: 3px 3px 1px black;
 }
 
-html {
-  font-size: 10px;
-  font-family: 'Share Tech Mono', monospace;
-  background-color: rgb(41, 41, 41);;
-}
+
 
 .logo-header h2 {
   font-size: 32px;
@@ -43,14 +48,32 @@ p, li {
   letter-spacing: 1px;
 }
 
-body {
-  margin: 20 auto;
-  background-color: rgb(96,96,96);
-  padding: 20px 20px 20px 20px;
-  border: 5px solid black;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
+.wrapper { 
+        background:#EFEFEF; 
+        box-shadow: 1px 1px 10px #999; 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px !important;
+        width: 800px;
+        padding-top: 5px;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 80px;
+    white-space:nowrap
+    } 
+    .imageDiv img { 
+        box-shadow: 1px 1px 10px #999; 
+        margin: 2px;
+        max-height: 50px;
+        cursor: pointer;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:top;
+    }
