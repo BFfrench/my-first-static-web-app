@@ -64,7 +64,7 @@ p, li {
     .scrolls { 
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 80px;
+        height: 400px;
     white-space:nowrap
     } 
     .imageDiv img { 
