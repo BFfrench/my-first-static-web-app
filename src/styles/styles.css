@@ -52,12 +52,12 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 .horizontal-scrolling-items {
   display: flex;
   height: 400px; 
-  gap: 100px;
+  gap: 50 px;
 }
 
 .horizontal-scroll-item {
 	height: 100%;
-	width: 464px;
+	/*width: 464px;*/
 	background-size: cover;
 	animation-duration: 30s;	
 	animation-name: HorizontalScroll;
@@ -67,7 +67,7 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 @keyframes infiniteScroll {
 	from {transform: translateX(0) }
-	to {transform: translateX(calc(0px - 50% - 50px));}
+	to {transform: translateX(calc(0px - 50% - 25px));}
 }
 
 .item-1 {
