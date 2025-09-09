@@ -60,7 +60,7 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 .horizontal-scrolling-items-wrapper {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     animation-name: infiniteScroll;
     animation-duration: 75s;
     animation-iteration-count: infinite;
@@ -71,14 +71,14 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 .horizontal-scrolling-items-group {
     display: flex;
-    width: auto;
-    gap: 100px;
+    width: 800px;
+    gap: 50px;
     overflow-x: hidden !important;
 }
 
 .horizontal-scroll-item {
 	height: 280px;
-	width: auto;
+	width: 800px;
 	background-size: cover;
 	border: 1px solid #ccc;
   border-radius: 2rem;
