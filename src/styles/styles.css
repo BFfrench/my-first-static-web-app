@@ -53,49 +53,65 @@ body{
  css animation adapted from tutorial at:
 https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
-.horizontal-scrolling-items {
-  display: flex;
-  height: 400px; 
-  gap: 50px;
+@keyframes infiniteScroll {
+	from {transform: translateX(0) }
+	to {transform: translateX(calc(0px - 50% - 50px));}
+}
+
+.horizontal-scrolling-items-wrapper {
+    display: flex;
+    gap: 100px;
+    animation-name: infiniteScroll;
+    animation-duration: 75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 25px 0 !important;
+    overflow-x: hidden !important;
+}
+
+.horizontal-scrolling-items-group {
+    display: flex;
+    width: auto;
+    gap: 100px;
+    overflow-x: hidden !important;
 }
 
 .horizontal-scroll-item {
-	height: 100%;
-	width: 400px;
+	height: 280px;
+	width: auto;
 	background-size: cover;
-	animation-duration: 30s;	
-	animation-name: HorizontalScroll;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
-@keyframes infiniteScroll {
-	from {transform: translateX(0) }
-	to {transform: translateX(calc(0px - 50% - 25px));}
+	border: 1px solid #ccc;
+  border-radius: 2rem;
 }
 
 .item-1 {
   background-image: url("../images/bench science to analysis.png");
+  width: 464px;
 }
 
 .item-2 {
   background-image: url("../images/Cross platform harmonisation.png");
+  width: 464px;
 }
 
 .item-3 {
   background-image: url("../images/Designed for thinkers bult for doers.png");
+  width: 464px;
 }
 
 .item-4 {
   background-image: url("../images/desktop science and productivity apps.png");
+  width: 464px;
 }
 
 .item-5 {
   background-image: url("../images/minimalist productivity tools.png");
+  width: 464px;
 }
 
 .item-6 {
   background-image: url("../images/mobile science and productivity apps.png");
+  width: 464px;
 }
 
 /* ANTIMATION END */
