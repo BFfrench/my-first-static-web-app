@@ -16,7 +16,7 @@ html {
 body{
   margin: 100px 0 0 0;
   padding: 0 10px;
-  background-color: rgb(0, 235, 0);
+  background-color: rgb(90, 93, 90);
   box-sizing: border-box;
   margin-left: 400;
   margin-right: 400;
@@ -86,32 +86,26 @@ https://web-eau.net/en/blog/horizontal-scrolling-images-css */
 
 .item-1 {
   background-image: url("../images/bench science to analysis.png");
-  width: 464px;
 }
 
 .item-2 {
   background-image: url("../images/Cross platform harmonisation.png");
-  width: 464px;
 }
 
 .item-3 {
   background-image: url("../images/Designed for thinkers bult for doers.png");
-  width: 464px;
 }
 
 .item-4 {
   background-image: url("../images/desktop science and productivity apps.png");
-  width: 464px;
 }
 
 .item-5 {
   background-image: url("../images/minimalist productivity tools.png");
-  width: 464px;
 }
 
 .item-6 {
   background-image: url("../images/mobile science and productivity apps.png");
-  width: 464px;
 }
 
 /* ANTIMATION END */
