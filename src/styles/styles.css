@@ -89,33 +89,33 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
 }
 
 .marquee--6 .marquee__item:nth-of-type(1) {
-  --marquee-delay: calc(var(--marquee-duration) * (684 / 784 * -1));
-  --marquee-item-width: 300px;
+  --marquee-delay: calc(var(--marquee-duration) * -1);
+  --marquee-item-width: 400px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(2) {
-  --marquee-delay: calc(var(--marquee-duration) * (534 / 784 * -1));
-  --marquee-item-width: 300px;
+  --marquee-delay: calc(var(--marquee-duration) * -1);
+  --marquee-item-width: 400px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(3) {
-  --marquee-delay: calc(var(--marquee-duration) * (409 / 784 * -1));
-  --marquee-item-width: 300px;
+  --marquee-delay: calc(var(--marquee-duration) * -1);
+  --marquee-item-width: 400px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(4) {
-  --marquee-delay: calc(var(--marquee-duration) * (299 / 784 * -1));
-  --marquee-item-width: 300px;
+  --marquee-delay: calc(var(--marquee-duration) * -1);
+  --marquee-item-width: 400px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(5) {
-  --marquee-delay: calc(var(--marquee-duration) * (166 / 784 * -1));
-  --marquee-item-width: 300px;
+  --marquee-delay: calc(var(--marquee-duration) * -1);
+  --marquee-item-width: 400px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(6) {
   --marquee-delay: calc(var(--marquee-duration) * -1);
-  --marquee-item-width: 300px;
+  --marquee-item-width: 400px;
 }
 
 @keyframes go {
