@@ -10,7 +10,7 @@ TODO: play with weight and style params */
 html {
   font-size: 25px;
   font-family: 'Share Tech Mono', monospace;
-  background-color: rgb(32, 11, 168);
+  background: rgb(235, 235, 235);
 }
 
 body{
@@ -26,18 +26,14 @@ body{
 .logo-header img {
   float: left;
   width: 200px;
-  /*height: 100px;*/
   background: rgb(235, 235, 235);
 }
 
 .logo-header h1 {
   position: relative;
-  top: 18px;
-  left: 10px;
-
+  top: 10px;
   font-size: 60px;
   text-align: center;
-
   margin: 0;
   padding: 20px 0;
   color: #156082;
@@ -50,10 +46,7 @@ body{
 }
 
 /* -- ANIMATION START --
- css animation adapted from tutorial at:
-https://web-eau.net/en/blog/horizontal-scrolling-images-css 
-
-This does not work so well, have a look at:
+CSS animation adapted from tutorial at:
 https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
 
 
@@ -72,24 +65,34 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
   );
 }
 
-.marquee--6 {
+/*.marquee--6 {
   --marquee-item-width: 784;
   --marquee-item-height: 100px;
+  --marquee-duration: 20s;
+}*/
+
+.marquee--6 {
+  --marquee-item-width: 800px;
+  --marquee-item-height: 400px;
   --marquee-duration: 20s;
 }
 
 .marquee__item {
   --marquee-item-offset: max(
-    784px, /* width of all items */
-    calc(100% + 784px)
+    800px, /* width of all items */
+    calc(100% + 800px)
   );
   position: absolute;
   inset-inline-start: var(--marquee-item-offset);
   transform: translateX(-50%);
   animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
-.marquee__item:nth-child(4n) {
+/*.marquee__item:nth-child(4n) {
   border-top-right-radius: 1rem;
 }
 
@@ -103,11 +106,11 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
 
 .marquee__item:nth-child(4n + 3) {
   border-top-left-radius: 1rem;
-}
+}*/
 
 .marquee--6 .marquee__item:nth-of-type(1) {
   --marquee-delay: calc(var(--marquee-duration) * (684 / 784 * -1));
-  --marquee-item-width: 100px;
+  --marquee-item-width: 300px;
 }
 
 .marquee--6 .marquee__item:nth-of-type(2) {
