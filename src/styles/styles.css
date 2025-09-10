@@ -67,12 +67,6 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
   );
 }
 
-/*.marquee--6 {
-  --marquee-item-width: 784;
-  --marquee-item-height: 100px;
-  --marquee-duration: 20s;
-}*/
-
 .marquee--6 {
   --marquee-item-width: 800px;
   --marquee-item-height: 400px;
@@ -93,22 +87,6 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
-
-/*.marquee__item:nth-child(4n) {
-  border-top-right-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 1) {
-  border-bottom-right-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 2) {
-  border-bottom-left-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 3) {
-  border-top-left-radius: 1rem;
-}*/
 
 .marquee--6 .marquee__item:nth-of-type(1) {
   --marquee-delay: calc(var(--marquee-duration) * (684 / 784 * -1));
@@ -146,75 +124,7 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
   }
 }
 
-
-
-
-*/
-
-/*
-@keyframes infiniteScroll {
-	from {transform: translateX(0) }
-	to {transform: translateX(calc(0px - 50% - 50px));}
-}
-
-.horizontal-scrolling-items-wrapper {
-    display: flex;
-    gap: 50px;
-    animation-name: infiniteScroll;
-    animation-duration: 75s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    padding: 25px 0 !important;
-    overflow-x: hidden !important;
-}
-
-.horizontal-scrolling-items-group {
-    display: flex;
-    width: 800px;
-    gap: 50px;
-    overflow-x: hidden !important;
-}
-
-.horizontal-scroll-item {
-	height: 280px;
-	width: 1600px;
-	background-size: cover;
-	border: 1px solid #ccc;
-  border-radius: 2rem;
-}
-
-.item-1 {
-  background-image: url("../images/bench science to analysis.png");
-  width: 800px;
-}
-
-.item-2 {
-  background-image: url("../images/Cross platform harmonisation.png");
-  width: 800px;
-}
-
-.item-3 {
-  background-image: url("../images/Designed for thinkers bult for doers.png");
-  width: 800px;
-}
-
-.item-4 {
-  background-image: url("../images/desktop science and productivity apps.png");
-  width: 800px;
-}
-
-.item-5 {
-  background-image: url("../images/minimalist productivity tools.png");
-  width: 800px;
-}
-
-.item-6 {
-  background-image: url("../images/mobile science and productivity apps.png");
-  width: 800px;
-}
-*/
 /* ANTIMATION END */
-
 
 p, li {
   color: rgb(32, 32, 32);
