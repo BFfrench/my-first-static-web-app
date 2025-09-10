@@ -75,7 +75,7 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
 
 .marquee__item {
   --marquee-item-offset: max(
-    800px, /* width of all items */
+    2400px, /* width of all items */
     calc(100% + 800px)
   );
   position: absolute;
