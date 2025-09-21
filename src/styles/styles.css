@@ -8,12 +8,12 @@ TODO: play with weight and style params */
 
 /* set the bgcolor of the main pain - want light grey*/
 html {
-  font-size: 25px;
+  font-size: 12pt;
   font-family: 'Share Tech Mono', monospace;
   background: rgb(141, 181, 193);
 }
 
-.bodystyle{
+.bodystyle {
   margin: 2% 2% 2% 2%;
   padding: 2% 2%;
   background-color: rgb(165, 180, 181);
@@ -27,22 +27,54 @@ html {
   box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 1), 0 60px 200px 0 rgba(1, 0, 0, 0.5);
 }
 
-.logo-header img {
+.logo-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+
+  overflow: hidden;
+  
+  box-sizing: border-box;
+}
+
+.logo>img{
   float: left;
-  height: max(8vh,8vw);
-  width: auto;;
+  height: 8vh;
+  width: auto; /* maintain aspect ratio */
+  padding-right: 2vw;
   background: rgb(165, 180, 181);
 }
 
-.logo-header h1 {
+.typewriter-header>h1 {
+  
   position: relative;
-  font-size: 60px;
-  text-align: center;
+  font-size: clamp(3.5vh, 7vh, 7vw); /* min 2rem, preferred 7vh, max 8vw */
+
   margin: 0;
   padding: 0 0;
-  color: #156082;
+  color: rgb(71, 118, 161);
   text-shadow: 3px 3px 1px black;
+
+  /* Typing animation */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */ 
+  border-right: 0.25em solid rgb(71, 118, 161); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  
+  /* ...existing code... */
+  animation: typing 3s steps(30, end), blink-caret .75s step-end 2.5s;
+  animation-fill-mode: forwards;  /*Ensures final state is kept */
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} 
+
+  @keyframes blink-caret {
+  0%, 50% { border-color: rgb(71, 118, 161); }
+  100% { border-color: transparent; }
+ }
 
 .logo-header h2 {
   font-size: 32px;
@@ -86,6 +118,7 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
   
   position: absolute;
   inset-inline-start: var(--marquee-item-offset);
+  transform: translateX(-50%); /* center the item */
   
   animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
 
@@ -131,7 +164,7 @@ https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
 
 p, li {
   color: rgb(32, 32, 32);
-  font-size: 20px;
+  font-size: 1 rem;
   line-height: 1.5;
   letter-spacing: 1px;
 }
