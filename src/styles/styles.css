@@ -31,7 +31,7 @@ html {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 
   overflow: hidden;
   
@@ -47,12 +47,11 @@ html {
 }
 
 .typewriter-header>h1 {
-  
+
   position: relative;
-  font-size: clamp(3.5vh, 7vh, 7vw); /* min 2rem, preferred 7vh, max 8vw */
+  font-size: clamp(2rem, 7vh, 7vw); /* min 2rem, preferred 7vh, max 8vw */
 
   margin: 0;
-  padding: 0 0;
   color: rgb(71, 118, 161);
   text-shadow: 3px 3px 1px black;
 
@@ -71,21 +70,24 @@ html {
   to { width: 100% }
 } 
 
-  @keyframes blink-caret {
+@keyframes blink-caret {
   0%, 50% { border-color: rgb(71, 118, 161); }
   100% { border-color: transparent; }
  }
 
-.logo-header h2 {
+h2 {
   font-size: 32px;
   text-align: center;
+  margin: 0;
+  font-size: clamp(1rem, 3vw, 3.5vh); /* min 2rem, preferred 7vh, max 8vw */
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.5rem 0;
 }
 
 /* -- ANIMATION START --
 CSS animation adapted from tutorial at:
 https://www.smashingmagazine.com/2024/04/infinite-scrolling-logos-html-css/ */
-
-
 .marquee {
 
   /* variables to control the animation */
